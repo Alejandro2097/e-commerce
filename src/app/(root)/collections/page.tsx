@@ -9,7 +9,6 @@ export default async function CollectionsPage() {
       id: collections.id,
       name: collections.name,
       slug: collections.slug,
-      description: collections.description,
       productCount: sql<number>`count(${productCollections.productId})::int`,
     })
     .from(collections)
@@ -43,11 +42,6 @@ export default async function CollectionsPage() {
               <h2 className="text-heading-3 mb-2 text-dark-900 group-hover:text-dark-700">
                 {collection.name}
               </h2>
-              {collection.description && (
-                <p className="text-body mb-4 text-dark-700">
-                  {collection.description}
-                </p>
-              )}
               <p className="text-small text-dark-600">
                 {collection.productCount} {collection.productCount === 1 ? 'product' : 'products'}
               </p>
