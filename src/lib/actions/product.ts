@@ -418,7 +418,6 @@ export async function getProductReviews(productId: string): Promise<Review[]> {
     id: r.id,
     author: r.authorName?.trim() || r.authorEmail || "Anonymous",
     rating: r.rating,
-    title: undefined,
     content: r.comment || "",
     createdAt: r.createdAt.toISOString(),
   }));
