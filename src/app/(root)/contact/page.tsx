@@ -4,7 +4,7 @@ export default function ContactPage() {
       <div className="mb-8">
         <h1 className="text-heading-1 mb-4 text-dark-900">Contact Us</h1>
         <p className="text-body text-dark-700">
-          Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
         </p>
       </div>
 
