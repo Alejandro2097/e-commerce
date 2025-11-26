@@ -14,7 +14,7 @@ const Home = async () => {
     priceMin: undefined,
     priceMax: undefined,
     priceRanges: [],
-    sort: "date_desc",
+    sort: "newest",
     page: 1,
     limit: 6,
   };
