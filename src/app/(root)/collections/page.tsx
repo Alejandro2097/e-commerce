@@ -1,8 +1,7 @@
 import { db } from "@/lib/db";
-import { collections, productCollections, products } from "@/lib/db/schema";
+import { collections, productCollections } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
 import Link from "next/link";
-import Image from "next/image";
 
 export default async function CollectionsPage() {
   const allCollections = await db
